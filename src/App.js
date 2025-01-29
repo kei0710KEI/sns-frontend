@@ -8,12 +8,6 @@ import { AuthContext } from "./state/AuthContext";
 
 function App(){
   const { user } = useContext(AuthContext);
-  const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
-
-fetch(`${API_URL}/api/endpoint`)
-  .then((res) => res.json())
-  .then((data) => console.log(data));
-
   return (
     <Router>
       <Routes>
