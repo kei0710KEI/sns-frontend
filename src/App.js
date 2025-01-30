@@ -6,6 +6,7 @@ import Register from "./pages/register/Register";
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import { AuthContext } from "./state/AuthContext";
 
+
 function App(){
   const { user } = useContext(AuthContext);
   return (
